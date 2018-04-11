@@ -1,0 +1,23 @@
+{
+  "name": "vuex-test-util",
+  "version": "1.0.0",
+  "description": "vuex test util",
+  "main": "vuex-test-util.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConanShin/vuex-test-util.git"
+  },
+  "keywords": [
+    "vuex",
+    "test"
+  ],
+  "author": "Conan Shin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConanShin/vuex-test-util/issues"
+  },
+  "homepage": "https://github.com/ConanShin/vuex-test-util#readme"
+}

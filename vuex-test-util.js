@@ -1,4 +1,4 @@
-import Vuex from 'vuex'
+var Vuex = require('vuex')
 
 expect.extend({
   toBeActionCalledWith(received, expected) {
@@ -15,7 +15,7 @@ expect.extend({
   }
 })
 
-export default class MockStoreBuilder{
+module.exports = class MockStoreBuilder{
   constructor (realStore) {
     this.state = realStore.state
     this.getters = realStore._wrappedGetters

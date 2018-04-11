@@ -1,6 +1,6 @@
 {
   "name": "vuex-test-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vuex test util",
   "main": "vuex-test-util.js",
   "scripts": {

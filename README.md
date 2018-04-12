@@ -4,6 +4,7 @@ npm install --save vuex-test-util
 
 --------------------------------------------------------
 
+```ruby
 import { shallow } from 'vue-test-utils'
 import MockStoreBuilder from 'vuex-test-util'
 import realStore from '@/store'
@@ -21,16 +22,12 @@ describe('VuexTest.vue', () => {
     jest.restoreAllMocks()
   })
 
-  it('should dispatch action setNameTo when setNameTo method is called', () => {
-    subjectWrapper.find('input').element.value = "New Name"
-    subjectWrapper.update()
+  it('should dispatch action actionWithMultipleParameters when methodInvokingAction is called', () => {
+    expect(store.actions.actionWithMultipleParameters).not.toBeCalled()
 
-    expect(store.actions.setNameTo).not.toBeCalled()
+    subjectInstance.methodInvokingAction('parameter1', 'parameter2')
 
-    //setNameTo Vue Component Method is invoked
-    subjectInstance.setNameTo()
-
-    // check if action named setNameTo in vuex store is invoked
-    expect(store.actions.setNameTo).toBeActionCalledWith("New Name")
+    expect(store.actions.actionWithMultipleParameters).toBeActionCalledWith({firstParam: 'parameter1', secondParam: 'parameter2'})
   })
 })
+```

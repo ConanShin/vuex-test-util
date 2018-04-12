@@ -9,6 +9,11 @@ Example Project: https://github.com/ConanShin/testable-vue.git
 --------------------------------------------------------
 
 How to Install
+
+```
+npm install --save-dev vuex
+```
+
 ```
 npm install --save vuex-test-util
 ```

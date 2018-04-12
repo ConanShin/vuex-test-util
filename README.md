@@ -8,7 +8,7 @@ npm install --save vuex-test-util
 --------------------------------------------------------
 
 How to Use
-```ruby
+```js
 import { shallow } from 'vue-test-utils'
 import MockStoreBuilder from 'vuex-test-util'
 import realStore from '@/store'

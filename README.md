@@ -1,5 +1,12 @@
 Vuex Store Mocking Library for Jest Test
+
 Vuex action test util
+
+--------------------------------------------------------
+
+Example Project: https://github.com/ConanShin/testable-vue.git
+
+--------------------------------------------------------
 
 How to Install
 ```
@@ -52,7 +59,3 @@ describe('VuexTest.vue', () => {
   })
 })
 ```
-
---------------------------------------------------------
-
-Example Project: https://github.com/ConanShin/testable-vue.git
